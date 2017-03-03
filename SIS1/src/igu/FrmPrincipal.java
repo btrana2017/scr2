@@ -59,7 +59,11 @@ public class FrmPrincipal extends JFrame {
 		JButton btnGuardar = new JButton("Guardar");
 		toolBar.add(btnGuardar);
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("New b");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		toolBar.add(btnNewButton);
 		
 		JButton btnReporte = new JButton("Reportes");
@@ -68,6 +72,8 @@ public class FrmPrincipal extends JFrame {
 			}
 		});
 		toolBar.add(btnReporte);
+		JButton btnImprimir = new JButton("Imprimir");
+		toolBar.add(btnImprimir);
 	}
 
 }
