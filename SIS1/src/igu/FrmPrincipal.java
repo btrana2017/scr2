@@ -9,6 +9,8 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class FrmPrincipal extends JFrame {
 
@@ -57,8 +59,15 @@ public class FrmPrincipal extends JFrame {
 		JButton btnGuardar = new JButton("Guardar");
 		toolBar.add(btnGuardar);
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("New b");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
 		toolBar.add(btnNewButton);
+		
+		JButton btnImprimir = new JButton("Imprimir");
+		toolBar.add(btnImprimir);
 	}
 
 }
