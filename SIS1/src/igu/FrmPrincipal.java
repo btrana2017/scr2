@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JToolBar;
+import javax.swing.JButton;
 
 public class FrmPrincipal extends JFrame {
 
@@ -49,6 +50,12 @@ public class FrmPrincipal extends JFrame {
 		
 		JToolBar toolBar = new JToolBar();
 		scrollPane.setColumnHeaderView(toolBar);
+		
+		JButton btnNuevo = new JButton("Nuevo");
+		toolBar.add(btnNuevo);
+		
+		JButton btnGuardar = new JButton("Guardar");
+		toolBar.add(btnGuardar);
 	}
 
 }
