@@ -53,6 +53,9 @@ public class FrmPrincipal extends JFrame {
 		JToolBar toolBar = new JToolBar();
 		scrollPane.setColumnHeaderView(toolBar);
 		
+		JButton btnMasNuevo = new JButton("Mas nuevo");
+		toolBar.add(btnMasNuevo);
+		
 		JButton btnNuevo = new JButton("Nuevo");
 		toolBar.add(btnNuevo);
 		
