@@ -56,6 +56,9 @@ public class FrmPrincipal extends JFrame {
 		
 		JButton btnGuardar = new JButton("Guardar");
 		toolBar.add(btnGuardar);
+		
+		JButton btnNewButton = new JButton("New button");
+		toolBar.add(btnNewButton);
 	}
 
 }
